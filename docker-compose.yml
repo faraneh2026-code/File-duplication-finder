@@ -1,0 +1,15 @@
+services:
+  file-dup-finder:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: file-dup-finder
+    volumes:
+      # ──────────────────────────────────────────────────
+      # Mount your target folder here:
+      #   Left side  = path on your host machine
+      #   Right side  = /data inside the container
+      # ──────────────────────────────────────────────────
+      - /path/to/your/folder:/data:ro
+    # Override default command with custom options:
+    # command: ["/data", "--extensions", ".txt", ".md", "--report", "/data/report.json"]

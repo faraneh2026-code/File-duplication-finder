@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pyo
+.git/
+.gitignore
+.env
+*.md
+docker-compose.yml
+docker-compose.override.yml
+.dockerignore
+sample_data/
+LICENSE
+CONTRIBUTING.md
+*.json
